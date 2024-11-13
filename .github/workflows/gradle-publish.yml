@@ -37,7 +37,7 @@ jobs:
           cp build/libs/*.jar deploy/application.jar
           cp Procfile deploy/Procfile
           cp -r .ebextensions deploy/.ebextensions
-          cd deploy && zip -r deploy.zip
+          cd deploy && zip -r deploy.zip .
 
       # 앞에서 만든 deploy.zip을 빈스톡한테 던져서 실행하게 함. 이 과정에서 IAM 사용자 정보가 필요함.
       - name: deploy to beanstalk
