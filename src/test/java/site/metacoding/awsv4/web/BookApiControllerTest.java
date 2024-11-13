@@ -34,7 +34,7 @@ import site.metacoding.awsv4.domain.BookRepository;
 // 그래서 RestTemplate로 직접 호출했을 때 = 스프링 트랜잭션
 // BookRepository로 호출했을 때 = JUnit 트랜잭션
 // auto_increment 초기화를 하려면 @Transactional 어노테이션이 붙어야 하는데 붙이면 트랜잭션이 따로 돌아서 더 복잡해져서 하지말자!!
-
+//dddd
 @ActiveProfiles("dev")
 @TestMethodOrder(value = MethodOrderer.OrderAnnotation.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
